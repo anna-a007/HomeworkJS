@@ -1,1 +1,1 @@
-# HomeworkJS
+# mentoring-simple-webpack-starter
