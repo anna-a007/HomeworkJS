@@ -5,14 +5,29 @@ for (let i = 0; i < 7; i++){
     console.log(k);  
 }
 
+// Шахм.доска
+// let k1 = "# # # # ";
+// let k2 = " # # # #";
+//     for(let i = 0; i <4 ;i++){
+//     console.log(k1);
+//     console.log(k2);
+// }
 
 // Шахм.доска
-let k1 = "# # # # ";
-let k2 = " # # # #";
-    for(let i = 0; i <4 ;i++){
-    console.log(k1);
-    console.log(k2);
-}
+let b =  '';
+for( let i=0; i<=8; i++){
+    for(k=1; k<=8; k++){
+        if ((i+k)%2 ==0){
+            b+= '#';                //если четное
+        }
+        else{
+            b += ' '                //если нечетное
+        }
+    }
+    b +='\n';
+  }
+
+  console.log(b);
 
 //-------------------------------Анкета----------------------------//
 let lastname;
