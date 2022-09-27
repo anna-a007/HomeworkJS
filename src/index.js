@@ -32,15 +32,18 @@ for( let i=0; i<=8; i++){
 //-------------------------------Анкета----------------------------//
 let lastname;
 do {lastname = prompt('Ваша фамилия?')}
-while (lastname.length === 0 || lastname === ' ');
+// while (lastname.length === 0 || lastname === ' ');
+while (!lastname);
 
 let firstname;
 do {firstname = prompt('Ваше имя?')}
-while (firstname.length === 0 || firstname === ' ');
+// while (firstname.length === 0 || firstname === ' ');
+while (!firstname);
 
 let patronymic;
 do {patronymic = prompt('Ваше отчество?')}
-while (patronymic.length === 0 || patronymic === ' ');
+// while (patronymic.length === 0 || patronymic === ' ');
+while (!patronymic);
 
 let age;
 do {age = Number(prompt('Ваш возраст?'))}
