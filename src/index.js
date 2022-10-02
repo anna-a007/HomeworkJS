@@ -1,6 +1,12 @@
-import "./main.scss";
+let arr = [ 5, 7, [ 4, [2], 8, [1,3], 2 ], [ 9, [] ], 1, 8];
 
-const add123 = (a, b) => a + b;
+let sum = 0;
 
-const res = add123(222, 3);
-console.log("Helloasda");
+function sumTree(array){
+    array.forEach((item) =>{
+        Array.isArray(item) ? sumTree(item) : sum +=item
+    });
+    return sum;
+}
+console.log(sumTree(arr));
+
