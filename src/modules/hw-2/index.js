@@ -9,3 +9,4 @@ function sumTree(array){
     return sum;
 }
 console.log(sumTree(arr));
+
